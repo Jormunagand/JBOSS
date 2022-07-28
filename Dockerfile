@@ -39,5 +39,5 @@ USER jboss
 
 EXPOSE 8000
 
-# wildfly had two mode of 
+# wildfly had two mode of operating it's either the managed domain that manage several servers or the standalone mode that we are using it because we only have one cluster
 CMD ["/opt/jboss/wildfly/bin/standalone.sh", "-c", "standalone-full.xml", "-b", "0.0.0.0"]
